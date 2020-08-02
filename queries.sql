@@ -1,0 +1,20 @@
+/* CRIAÇÃO DE TABELAS */
+
+CREATE TABLE users (
+	id_user INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	user_email VARCHAR(120) NOT NULL,
+	password NVARCHAR(50) NOT NULL,
+);
+
+CREATE TABLE tasks (
+	id_tarefa INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	titulo VARCHAR(100) NOT NULL,
+	descricao TEXT NOT NULL,
+	data_inicio DATETIME NOT NULL,
+	data_termino DATETIME,
+	ativo BIT NOT NULL DEFAULT 
+	id_user INT NOT NULL,
+	FOREIGN_KEY(id_user) REFERENCES users(id_user),
+);
+
+

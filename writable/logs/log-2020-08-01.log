@@ -1,0 +1,48 @@
+CRITICAL - 2020-08-01 20:12:46 --> Too few arguments to function App\Controllers\HelloWorld::helloPersonalizado(), 0 passed in /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php on line 918 and exactly 1 expected
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\HelloWorld->helloPersonalizado()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelloWorld))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-01 20:13:38 --> Too few arguments to function App\Controllers\HelloWorld::helloPersonalizado(), 0 passed in /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php on line 918 and exactly 1 expected
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\HelloWorld->helloPersonalizado()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelloWorld))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-01 20:13:48 --> Too few arguments to function App\Controllers\HelloWorld::helloPersonalizado(), 0 passed in /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php on line 918 and exactly 1 expected
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\HelloWorld->helloPersonalizado()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelloWorld))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-01 20:30:00 --> syntax error, unexpected 'if' (T_IF)
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-01 20:30:27 --> syntax error, unexpected 'if' (T_IF)
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-01 20:30:33 --> syntax error, unexpected 'if' (T_IF)
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-01 20:31:04 --> syntax error, unexpected 'if' (T_IF)
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-01 21:26:18 --> Undefined variable: titulo
+#0 /opt/lampp/htdocs/Vaggon/app/Views/produtos_index.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/Vaggon/system/Common.php(1119): CodeIgniter\View\View->render('produtos_index', Array, true)
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Produtos.php(12): view('produtos_index')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Produtos->index()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

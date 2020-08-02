@@ -1,0 +1,113 @@
+CRITICAL - 2020-08-02 14:51:55 --> syntax error, unexpected 'class' (T_CLASS), expecting '{'
+#0 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 14:52:18 --> syntax error, unexpected 'class' (T_CLASS), expecting '{'
+#0 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 15:45:47 --> Undefined variable: titulo
+#0 /opt/lampp/htdocs/Vaggon/app/Views/signin_index.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/Vaggon/system/Common.php(1119): CodeIgniter\View\View->render('signin_index', Array, true)
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(12): view('signin_index')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 15:45:56 --> Undefined variable: titulo
+#0 /opt/lampp/htdocs/Vaggon/app/Views/signin_index.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/Vaggon/system/Common.php(1119): CodeIgniter\View\View->render('signin_index', Array, true)
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(13): view('signin_index')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 15:46:10 --> Undefined variable: titulo
+#0 /opt/lampp/htdocs/Vaggon/app/Views/signin_index.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/Vaggon/system/Common.php(1119): CodeIgniter\View\View->render('signin_index', Array, true)
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(13): view('signin_index')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 15:56:53 --> Class 'App\Controllers\App\Models\LoginModel' not found
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 15:57:56 --> Class 'App\Controllers\App\Models\LoginModel' not found
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 15:58:00 --> Class 'App\Controllers\App\Models\LoginModel' not found
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 16:01:34 --> Class 'App\Controllers\App\Models\LoginModel' not found
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 16:01:55 --> Class 'App\Controllers\App\Models\LoginModel' not found
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 16:46:50 --> syntax error, unexpected '}'
+#0 /opt/lampp/htdocs/Vaggon/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('/')
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-02 16:47:09 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 16:48:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@seedabit.org.br' at line 1
+#0 /opt/lampp/htdocs/Vaggon/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT * FROM u...')
+#1 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(21): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 16:49:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@seedabit.org.br' at line 1
+#0 /opt/lampp/htdocs/Vaggon/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT * FROM u...')
+#1 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
