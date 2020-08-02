@@ -111,3 +111,90 @@ CRITICAL - 2020-08-02 16:49:30 --> You have an error in your SQL syntax; check t
 #6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2020-08-02 16:55:45 --> Undefined variable: db
+#0 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 20, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-02 16:56:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@seedabit.org.br' at line 1
+#0 /opt/lampp/htdocs/Vaggon/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT id_user ...')
+#1 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_user ...')
+#2 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_user ...')
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(21): CodeIgniter\Database\BaseConnection->query('SELECT id_user ...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 16:59:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@seedabit.org.br' at line 6
+#0 /opt/lampp/htdocs/Vaggon/system/Database/MySQLi/Connection.php(331): mysqli->query('\n\t\t\t\tSELECT \n\t\t...')
+#1 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\n\t\t\t\tSELECT \n\t\t...')
+#2 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\n\t\t\t\tSELECT \n\t\t...')
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(28): CodeIgniter\Database\BaseConnection->query('\n\t\t\t\tSELECT \n\t\t...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 17:00:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@seedabit.org.br' at line 6
+#0 /opt/lampp/htdocs/Vaggon/system/Database/MySQLi/Connection.php(331): mysqli->query('\n\t\t\t\tSELECT \n\t\t...')
+#1 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\n\t\t\t\tSELECT \n\t\t...')
+#2 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\n\t\t\t\tSELECT \n\t\t...')
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(28): CodeIgniter\Database\BaseConnection->query('\n\t\t\t\tSELECT \n\t\t...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 17:02:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@seedabit.org.br' at line 6
+#0 /opt/lampp/htdocs/Vaggon/system/Database/MySQLi/Connection.php(331): mysqli->query('\n\t\t\t\tSELECT \n\t\t...')
+#1 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('\n\t\t\t\tSELECT \n\t\t...')
+#2 /opt/lampp/htdocs/Vaggon/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('\n\t\t\t\tSELECT \n\t\t...')
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(28): CodeIgniter\Database\BaseConnection->query('\n\t\t\t\tSELECT \n\t\t...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 17:06:38 --> syntax error, unexpected '$query' (T_VARIABLE)
+#0 /opt/lampp/htdocs/Vaggon/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('login/inserir')
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('login/inserir')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-02 17:36:35 --> syntax error, unexpected '}'
+#0 /opt/lampp/htdocs/Vaggon/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('login/inserir')
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('login/inserir')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-02 17:37:02 --> syntax error, unexpected '}'
+#0 /opt/lampp/htdocs/Vaggon/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('login/inserir')
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('login/inserir')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-02 17:37:21 --> syntax error, unexpected ';', expecting ')'
+#0 /opt/lampp/htdocs/Vaggon/system/Router/Router.php(195): CodeIgniter\Router\Router->autoRoute('login/inserir')
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle('login/inserir')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-02 17:37:56 --> Call to undefined function App\Controllers\test_input()
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 17:39:47 --> Call to undefined function App\Controllers\test_input()
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->inserir()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
