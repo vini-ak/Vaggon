@@ -58,7 +58,7 @@ class Login extends BaseController
 			}			
 		}
 
-		echo View('signin_index', $data);
+		echo view('signin_index', $data);
 	}
 
 }

@@ -20,8 +20,8 @@
 			<input id="#password" type="password" name="password">
 		</div>
 
-		<a href="index.php/login/inserir" title="">Cadastro</a>
-		<input type="submit" name="Login" value="Submit">
+		<a href="<?php echo base_url('public/index.php/login/inserir') ?>" title="">Cadastro</a>
+		<input type="submit" name="Login" value="Entrar">
 
 	</form>
 </body>
