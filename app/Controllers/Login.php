@@ -7,6 +7,38 @@ class Login extends BaseController
 		return view('login_index');
 	}
 
+	public function validar() {
+		if($this->request->getMethod() === 'post') {
+			$data['msg'] = '';
+
+			$loginModel = new \App\Models\LoginModel();
+
+			$user_email = $this->request->getPost('user_email'); #EMAIL DO USUÁRIO
+			$password = $this->request->getPost('password'); # SENHA DO USUÁRIO
+
+			$db = \Config\Database::connect();
+			$sql = "SELECT id_user, password FROM users WHERE user_email = ?";
+			$query = $db->query($sql, [$user_email]);
+			$result = $query->getResult();
+
+			// Verificando se o email consta no BD
+			// Verificar se a senha está correta
+			if($result && $result[0]->password === $password) {
+				// Iniciando a sessão do usuário passando o ID
+				session_start();
+				$_SESSION['id_user'] = $result[0]->id_user;
+
+				// Acessando o dashboard desse usuário
+				$url = 'Location: ' . base_url('public/dashboard/');
+				header($url);
+				exit;
+			} else {
+				base_url('/');				
+				$data['msg'] = "O email não está cadastrado na nossa base de dados";
+			}
+		}
+	}
+
 	public function inserir() 
 	{
 		$data['titulo'] = "Cadastrar Usuário";

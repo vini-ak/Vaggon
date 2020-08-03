@@ -1,9 +1,11 @@
 /* CRIAÇÃO DE TABELAS */
 
+CREATE DATABASE vaggon;
+
 CREATE TABLE users (
 	id_user INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	user_email VARCHAR(120) NOT NULL,
-	password NVARCHAR(50) NOT NULL,
+	password VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE tasks (
@@ -12,9 +14,9 @@ CREATE TABLE tasks (
 	descricao TEXT NOT NULL,
 	data_inicio DATETIME NOT NULL,
 	data_termino DATETIME,
-	ativo BIT NOT NULL DEFAULT 
+	ativo BIT NOT NULL DEFAULT 1,
 	id_user INT NOT NULL,
-	FOREIGN_KEY(id_user) REFERENCES users(id_user),
+	FOREIGN KEY(id_user) REFERENCES users(id_user)
 );
 
 

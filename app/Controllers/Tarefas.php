@@ -6,10 +6,14 @@
 class Tarefas extends BaseController
 {
 	public function index() {
-		$tarefasModel = new \App\Models\TarefasModel();
-		$data['categorias'] = $tarefasModel->find();
+		session_start();
+		if($_SESSION['id_user']) {
+			$tarefasModel = new \App\Models\TarefasModel();
 
-		echo view('tarefas_index', $data);
+			# CORRIGIR ESTA QUERY!!!!!
+		    $data['tarefas'] = $tarefasModel->find();
+		    echo view('tarefas_index', $data);
+		}
 	}
 
 	public function editar($id_tarefa) 
