@@ -11,17 +11,16 @@
 	<h2 class="my-4"><i>Opa, bem vindo! Vamos ser produtivos?</i></h2>
 
 	<div id="tasks-container" class="d-flex flex-column align-items-center pt-5">
-		<button href="" type="button" class="btn btn-success" title="" data-toggle="modal" data-target="#add-modal">Adicionar tarefa</button>
+		<button href="" type="button" class="btn btn-lg btn-primary" title="" data-toggle="modal" data-target="#add-modal">Adicionar tarefa</button>
 
-		<table class="table mt-4">
+		<table class="table table-striped table-bordered mt-4">
 			<thead>
 				<tr>
-					<th class="col">ID</th>
-					<th class="col">Titulo</th>
-					<th class="col">Descrição</th>
-					<th class="col">Data Início</th>
-					<th class="col">Data Término</th>
-					<th class="col">Opções</th>
+					<th>Titulo</th>
+					<th colspan="7">Descrição</th>
+					<th>Data Início</th>
+					<th>Data Término</th>
+					<th>Opções</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -30,14 +29,13 @@
 					foreach ($tarefas as $c) { 
 					?>
 						<tr>
-							<td><?php echo $c->id_tarefa ?></td>
 							<td><?php echo $c->titulo ?></td>
-							<td colspan="5"><?php echo $c->descricao; ?></td>
+							<td colspan="7"><?php echo $c->descricao; ?></td>
 							<td ><?php echo $c->data_inicio; ?></td>
 							<td><?php echo $c->data_termino; ?></td>
-							<td>
-								<a href="<?php echo base_url('public/index.php/tarefas/editar/' . $c->id_tarefa) ?>" title="">Editar</a>
-								<a href="<?php echo base_url('public/index.php/tarefas/deletar/' . $c->id_tarefa) ?>" title="">Excluir</a>
+							<td class="d-flex flex-column justify-content-between align-items-center">
+								<a class="btn btn-sm btn-warning" href="<?php echo base_url('public/index.php/tarefas/editar/' . $c->id_tarefa) ?>" title="">Editar</a>
+								<a class="btn btn-sm btn-outline-danger" href="<?php echo base_url('public/index.php/tarefas/deletar/' . $c->id_tarefa) ?>" title="">Excluir</a>
 							</td>
 						</tr>
 					<?php
@@ -108,5 +106,8 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>

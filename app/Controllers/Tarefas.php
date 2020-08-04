@@ -7,7 +7,7 @@ class Tarefas extends BaseController
 {
 	public function index() {
 		session_start();
-		if($_SESSION['id_user']) {
+		if(isset($_SESSION['id_user'])) {
 			$tarefasModel = new \App\Models\TarefasModel();
 
 			$db = \Config\Database::connect();
@@ -18,6 +18,10 @@ class Tarefas extends BaseController
 		    $data['tarefas'] = $query->getResult();
 
 		    echo view('tarefas_index', $data);
+		} else {
+			$url = "Location: " . base_url('/');
+			header($url);
+			exit;
 		}
 	}
 
@@ -101,18 +105,6 @@ class Tarefas extends BaseController
 			header($url);
 			exit;
 		}
-
-		/*
-		$db = \Config\Database::connect();
-		$builder = $db->table('tasks');
-		$builder->set('ativo', 0);
-		$builder->where('id_tarefa', $id_tarefa);
-		if ($builder->update()) {
-			$url = 'Location: ' . base_url('public/dashboard/');
-			header($url);
-			exit;
-		}
-		*/
 	}
 
 }

@@ -4,7 +4,14 @@ class Login extends BaseController
 {
 	public function index() 
 	{
-		return view('login_index');
+		session_start();
+		if(isset($_SESSION['id_user'])) {
+			$url = 'Location: ' . base_url('public/dashboard/');
+			header($url);
+			exit;
+		} else {
+			return view('login_index');
+		}
 	}
 
 	public function validar() {
@@ -92,6 +99,14 @@ class Login extends BaseController
 		}
 
 		echo view('signin_index', $data);
+	}
+
+	public function logout() {
+		session_destroy();
+
+		$url = "Location: " . base_url('/');
+		header($url);
+		exit;
 	}
 
 }
