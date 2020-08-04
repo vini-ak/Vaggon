@@ -1,0 +1,56 @@
+CRITICAL - 2020-08-04 14:17:37 --> Array to string conversion
+#0 /opt/lampp/htdocs/Vaggon/app/Controllers/Tarefas.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/opt/lampp/htdo...', 26, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Tarefas->inserir()
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarefas))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-04 14:21:22 --> syntax error, unexpected '='
+#0 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-04 14:21:35 --> syntax error, unexpected '='
+#0 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-04 14:29:24 --> Undefined variable: _SESSION
+#0 /opt/lampp/htdocs/Vaggon/app/Controllers/Tarefas.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 44, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Tarefas->inserir()
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarefas))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-04 14:30:07 --> Undefined variable: tarefas
+#0 /opt/lampp/htdocs/Vaggon/app/Views/tarefas_index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/Vaggon/system/Common.php(1119): CodeIgniter\View\View->render('tarefas_index', Array, true)
+#3 /opt/lampp/htdocs/Vaggon/app/Controllers/Tarefas.php(48): view('tarefas_index')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Tarefas->inserir()
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarefas))
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-04 15:26:00 --> Too few arguments to function App\Controllers\Tarefas::deletar(), 0 passed in /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php on line 918 and exactly 1 expected
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Tarefas->deletar()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarefas))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-04 15:26:38 --> Too few arguments to function App\Controllers\Tarefas::deletar(), 0 passed in /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php on line 918 and exactly 1 expected
+#0 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Tarefas->deletar()
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tarefas))
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

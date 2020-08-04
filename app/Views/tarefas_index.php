@@ -8,20 +8,20 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-	<h2>MINHAS TAREFAS</h2>
+	<h2 class="my-4"><i>Opa, bem vindo! Vamos ser produtivos?</i></h2>
 
 	<div id="tasks-container" class="d-flex flex-column align-items-center pt-5">
-		<a href="" class="btn btn-success" title="">Adicionar tarefa</a>
+		<button href="" type="button" class="btn btn-success" title="" data-toggle="modal" data-target="#add-modal">Adicionar tarefa</button>
 
 		<table class="table mt-4">
 			<thead>
 				<tr>
-					<th colspan="1" class="col">ID</th>
-					<th colspan="5" class="col">Titulo</th>
-					<th colspan="7" class="col">Descrição</th>
-					<th colspan="4" class="col">Data Início</th>
-					<th colspan="4" class="col">Data Término</th>
-					<th colspan="3" class="col">Opções</th>
+					<th class="col">ID</th>
+					<th class="col">Titulo</th>
+					<th class="col">Descrição</th>
+					<th class="col">Data Início</th>
+					<th class="col">Data Término</th>
+					<th class="col">Opções</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -46,6 +46,62 @@
 				?>
 			</tbody>
 		</table>
+	</div>
+
+    <!--MODAL -->
+	<div class="modal fade" id="add-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Adicionar </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+				<form id="form-tarefas" action="<?php echo base_url('public/inserirtarefa'); ?>" method="post">
+					<div class="form-group">
+						<label for="titulo">Título</label>
+						<input type="text" name="titulo" id="titulo" class="form-control">
+					</div>
+					<div class="form-group">
+					    <label for="descricao">Descrição</label>
+					    <textarea name="descricao" id="descricao" class="form-control" placeholder="Fale um pouco sobre o que precisa ser feito..."></textarea>
+					</div>
+					
+					<div>
+						<h6>Início</h6>
+						<div class="d-flex flex-row">
+							<div class="form-group">
+						        <input type="date" name="data_inicio_dia" class="mr-3">
+					        </div>
+					        <div class="form-group">
+					    	    <input type="time" name="data_inicio_hora">
+					        </div>
+						</div>
+						
+					</div>
+					<div>
+						<h6>Término</h6>
+						<div class="d-flex flex-row">
+							<div class="form-group">
+						        <input type="date" name="data_termino_dia" class="mr-3">
+					        </div>
+					        <div class="form-group">
+					    	    <input type="time" name="data_termino_hora">
+					        </div>
+						</div>
+						
+					</div>
+					<div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <input  type="submit" class="btn btn-primary" value="Adicionar"></input>
+                    </div>
+				</form>
+            </div>
+            
+          </div>
+        </div>
 	</div>
 	
 

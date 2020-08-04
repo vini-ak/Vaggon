@@ -34,6 +34,7 @@ $routes->get('/', 'Login::index');
 $routes->add('/cadastro', 'Login::inserir');
 $routes->add('/dashboard', 'Tarefas::index');
 $routes->add('/validar', 'Login::validar');
+$routes->add('/inserirtarefa', 'Tarefas::inserir');
 
 
 /**
