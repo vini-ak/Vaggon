@@ -32,6 +32,7 @@ class Login extends BaseController
 				$url = 'Location: ' . base_url('public/dashboard/');
 				header($url);
 				exit;
+				
 			} else {
 				base_url('/');				
 				$data['msg'] = "O email não está cadastrado na nossa base de dados";

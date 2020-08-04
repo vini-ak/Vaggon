@@ -10,8 +10,13 @@ class Tarefas extends BaseController
 		if($_SESSION['id_user']) {
 			$tarefasModel = new \App\Models\TarefasModel();
 
-			# CORRIGIR ESTA QUERY!!!!!
-		    $data['tarefas'] = $tarefasModel->find();
+			$db = \Config\Database::connect();
+			
+			$sql = "SELECT * FROM tasks WHERE id_user = ?";
+		    $query = $db->query($sql, [$_SESSION['id_user']]);
+
+		    $data['tarefas'] = $query->getResult();
+
 		    echo view('tarefas_index', $data);
 		}
 	}

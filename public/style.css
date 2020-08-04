@@ -43,3 +43,17 @@ p {
 	font-family: 'Mulish', sans-serif;
 	font-size: 1.125rem;
 }
+
+#tasks-container {
+	height: 80vh;
+	width: 70vw;
+	background-color: white;
+	border-radius: 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+#tasks-container table {
+	max-width: 90%;
+}
