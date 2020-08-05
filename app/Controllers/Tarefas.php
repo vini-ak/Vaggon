@@ -27,8 +27,6 @@ class Tarefas extends BaseController
 
 	public function inserir() {
 		if($this->request->getMethod() === 'post') {
-			print_r($this->request->getPost()) ;
-
 
 			$tarefasModel = new \App\Models\TarefasModel();
 
@@ -60,15 +58,20 @@ class Tarefas extends BaseController
 
 	public function editar($id_tarefa) 
 	{
+
 		$data['msg'] = '';
 
 		$tarefasModel = new \App\Models\TarefasModel();
 		$tarefa = $tarefasModel->find($id_tarefa);
 
+		print_r($this->request->getPost());
+
 		// Tratando o datetime
+		
 		$data_inicio = $this->request->getPost('data_inicio_dia') . " " . $this->request->getPost('data_inicio_hora') .":00";
 
 		$data_termino = $this->request->getPost('data_termino_dia') . " " . $this->request->getPost('data_termino_hora') .":00";
+
 
 		if ($this->request->getMethod() === 'post') {
 			// Verifica se o título está vazio dps de ser atualizado.
@@ -77,14 +80,15 @@ class Tarefas extends BaseController
 
 			// Verifica a descricao está vazia. Se tiver sido passado algum texto, entao o campo será atualizado. 
 			// Caso contrario, o valor anterior será mantido.
-			$tarefa->descricao = strlen($this->request->getPost('descricao')) > 0 ? $this->request->getPost('titulo') : $tarefa->descricao;
+			$tarefa->descricao = strlen($this->request->getPost('descricao')) > 0 ? $this->request->getPost('descricao') : $tarefa->descricao;
 
 			// A mesma lógica acima serve para as datas
-			$tarefa->data_inicio = strlen($data_inicio) ? $data_inicio : $tarefa->data_inicio;
+			$tarefa->data_inicio = strlen($this->request->getPost('data_inicio_dia')) > 0 ? $data_inicio : $tarefa->data_inicio;
 
-			$tarefa->data_termino = strlen($data_termino) ? $data_termino : $tarefa->data_termino;
+			$tarefa->data_termino = strlen($this->request->getPost('data_termino_dia')) > 0 ? $data_termino : $tarefa->data_termino;
 
-			if ($tarefasModel->update($id, $tarefa)) {
+			print_r($tarefa);
+			if ($tarefasModel->update($id_tarefa, $tarefa)) {
 				$url = 'Location: ' . base_url('public/dashboard/');
 				header($url);
 				exit;
@@ -92,9 +96,6 @@ class Tarefas extends BaseController
 				echo "deu errado o update";
 			}
 		}
-
-		$data['tarefa'] = $tarefa;
-		echo view('tarefas_index', $data);
 	}
 
 	public function deletar($id_tarefa) {
@@ -105,6 +106,13 @@ class Tarefas extends BaseController
 			header($url);
 			exit;
 		}
+	}
+
+	public function gettarefa($id_tarefa) {
+		$tarefasModel = new \App\Models\TarefasModel();
+		$result = $tarefasModel->find($id_tarefa);
+
+		echo json_encode($result);
 	}
 
 }
