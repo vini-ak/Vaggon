@@ -9,9 +9,9 @@
 </head>
 <body>
 	<h2 class="mt-5"><?php echo $titulo; ?></h2>
-	<strong class="text-align-center"><?php echo $msg; ?></strong>
+	<p class="text-center mt-5"><strong><?php echo $msg; ?></strong></p>
 
-	<div id="form-config" class="d-flex flex-column pt-4 px-5">
+	<div id="form-config" class="d-flex flex-column pt-1 px-5">
 		<img src="vaggon-logo.png" class="align-self-center"> 
 		<form method="post" accept-charset="utf-8" class="d-flex flex-column align-items-end">
 			<div class="d-flex flex-column mt-4 mb-2 w-100">

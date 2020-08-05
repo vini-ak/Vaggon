@@ -25,6 +25,11 @@ p {
     color: #333;
     font-size: 1.25rem;
 }
+
+strong {
+	text-align: center;
+	width: 100vw;
+}
 #form-login, #form-config {
 	margin: 10vh auto;
 	border-radius: 10px;

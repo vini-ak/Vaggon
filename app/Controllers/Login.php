@@ -141,7 +141,28 @@ class Login extends BaseController
 		}
 		echo json_encode($result);
 
-		
+	}
+
+	public function excluirconta() {
+		session_start();
+
+		$db = \Config\Database::connect();
+		$builder = $db->table('tasks');
+		$builder->delete(['id_user' => $_SESSION['id_user']]); 
+
+		$loginModel = new \App\Models\LoginModel();
+
+		if ($loginModel->delete($_SESSION['id_user'])) {
+			session_destroy();
+			$url = 'Location: ' . base_url('public/');
+			header($url);
+			exit;
+		} else {
+			echo "A deleção não aconteceu.";
+		}
+
+			
+
 	}
 
 }

@@ -31,7 +31,7 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 		          <a class="dropdown-item" href="<?php echo base_url('public/alterarsenha') ?>">Alterar Senha</a>
-		          <a class="dropdown-item" href="#">Deletar Conta</a>
+		          <a class="dropdown-item" data-toggle="modal" data-target="#modal-delete">Deletar Conta</a>
 		        </div>
 		      </li>
 		      <li class="nav-item">
@@ -142,6 +142,28 @@
             
           </div>
         </div>
+	</div>
+
+
+	<!-- MODAL DELETAR CONTA -->
+	<div class="modal" tabindex="-1" role="dialog" id="modal-delete">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Título do modal</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>Tem certeza que quer excluir sua conta?</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+	        <a type="button" class="btn btn-danger" href="<?php echo base_url('public/excluirconta') ?>">Excluir conta</a>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

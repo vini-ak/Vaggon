@@ -38,6 +38,7 @@ $routes->add('/inserirtarefa', 'Tarefas::inserir');
 $routes->add('/logout', 'Login::logout');
 $routes->add('/alterarsenha', 'Login::alterarsenha');
 $routes->add('/validarsenha', 'Login::validarsenha');
+$routes->add('/excluirconta', 'Login::excluirconta');
 
 
 /**
