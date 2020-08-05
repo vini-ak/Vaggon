@@ -19,7 +19,7 @@ class Tarefas extends BaseController
 
 		    echo view('tarefas_index', $data);
 		} else {
-			$url = "Location: " . base_url('/');
+			$url = "Location: " . base_url('/public');
 			header($url);
 			exit;
 		}

@@ -8,10 +8,50 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg d-flex flex-row justify-content-between px-3 py-2">
+	  <a class="navbar-brand" href="#">Dashboard</a>
+	  <div class="">
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link btn btn-warning mr-2" href="<?php echo base_url('public/dashboard'); ?>">
+		        	<img src="icons/home.svg" class="nav-icon pr-1">
+		        	Home <span class="sr-only">(current)</span>
+		        </a>
+		      </li>
+		      
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle btn btn-warning mr-2" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <img src="icons/settings.svg" class="nav-icon pr-1">
+		        	Configurações
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="#">Alterar Senha</a>
+		          <a class="dropdown-item" href="#">Deletar Conta</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link btn btn-danger" href="<?php echo base_url('public/logout') ?>">
+		        	<img src="icons/logout.svg" class="nav-icon pr-1">
+		        	Logout
+		        </a>
+		      </li>
+		    </ul>
+		  </div>
+	  </div>
+	  
+	</nav>
 	<h2 class="my-4"><i>Opa, bem vindo! Vamos ser produtivos?</i></h2>
 
 	<div id="tasks-container" class="d-flex flex-column align-items-center pt-4">
-		<button href="" type="button" id="create-task" class="btn btn-lg btn-primary" title="" data-toggle="modal" data-target="#add-modal">Adicionar tarefa</button>
+		<button href="" type="button" id="create-task" class="btn btn-lg btn-outline-warning" title="" data-toggle="modal" data-target="#add-modal">
+			<img src="icons/add.svg" class="button-add">
+			Adicionar tarefa
+		</button>
 
 		<table class="table table-striped table-bordered mt-5">
 			<thead>
@@ -35,9 +75,9 @@
 							<td><?php echo $c->data_termino; ?></td>
 							<td class="d-flex flex-column justify-content-between align-items-center">
 								<input type="hidden" name="" value="<?php echo $c->id_tarefa; ?>">
-								<a class="btn btn-sm btn-warning editar" href="<?php echo base_url('public/index.php/tarefas/gettarefa/' . $c->id_tarefa) ?>" title="">Editar</a>
+								<a class="btn btn-sm btn-outline-warning editar" href="<?php echo base_url('public/index.php/tarefas/gettarefa/' . $c->id_tarefa) ?>" title="">Editar</a>
 								<!-- data-toggle="modal" data-target="#add-modal"  -->
-								<a class="btn btn-sm btn-outline-danger mt-2" href="<?php echo base_url('public/index.php/tarefas/deletar/' . $c->id_tarefa) ?>" title="">Excluir</a>
+								<a class="btn btn-sm btn-outline-danger excluir mt-2" href="<?php echo base_url('public/index.php/tarefas/deletar/' . $c->id_tarefa) ?>" title="">Excluir</a>
 							</td>
 						</tr>
 					<?php

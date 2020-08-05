@@ -3,7 +3,11 @@
 
 body, html {
 	height: 100vh;
-	background-color: orange  !important;
+	background-color: #f77f00  !important;
+}
+
+nav {
+	background: #003049;
 }
 
 h2 {
@@ -56,4 +60,34 @@ p {
 
 #tasks-container table {
 	max-width: 90%;
+}
+
+.nav-icon {
+	width: 30px;
+}
+
+#create-task {
+	font-size: 1.5rem !important;
+	color: #000;
+	border-radius: 30px;
+	border: solid 3px;
+}
+.button-add {
+	width: 45px;
+}
+
+thead th {
+	font-family: 'Mulish', sans-serif;
+}
+
+tbody th {
+	font-family: 'Roboto Slab', serif;	
+}
+
+.editar, .excluir {
+	border-radius: 10px !important;
+	border: solid 2px !important;
+	color: #000 !important;
+	width: 100% !important;
+	min-width: 60px;
 }

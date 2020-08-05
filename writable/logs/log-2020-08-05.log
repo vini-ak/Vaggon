@@ -1,0 +1,8 @@
+CRITICAL - 2020-08-05 11:03:43 --> session_destroy(): Trying to destroy uninitialized session
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy...', '/opt/lampp/htdo...', 105, Array)
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(105): session_destroy()
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->logout()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

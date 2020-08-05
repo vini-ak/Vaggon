@@ -102,11 +102,16 @@ class Login extends BaseController
 	}
 
 	public function logout() {
+		session_start();
 		session_destroy();
 
-		$url = "Location: " . base_url('/');
+		$url = "Location: " . base_url('/public');
 		header($url);
 		exit;
+	}
+
+	public function alterarsenha() {
+		
 	}
 
 }
