@@ -36,6 +36,8 @@ $routes->add('/dashboard', 'Tarefas::index');
 $routes->add('/validar', 'Login::validar');
 $routes->add('/inserirtarefa', 'Tarefas::inserir');
 $routes->add('/logout', 'Login::logout');
+$routes->add('/alterarsenha', 'Login::alterarsenha');
+$routes->add('/validarsenha', 'Login::validarsenha');
 
 
 /**

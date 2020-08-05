@@ -9,7 +9,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg d-flex flex-row justify-content-between px-3 py-2">
-	  <a class="navbar-brand" href="#">Dashboard</a>
+	  <a class="navbar-brand" href="<?php echo base_url('public/dashboard'); ?>">Dashboard</a>
 	  <div class="">
 	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
 		        	Configurações
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="#">Alterar Senha</a>
+		          <a class="dropdown-item" href="<?php echo base_url('public/alterarsenha') ?>">Alterar Senha</a>
 		          <a class="dropdown-item" href="#">Deletar Conta</a>
 		        </div>
 		      </li>
@@ -47,8 +47,8 @@
 	</nav>
 	<h2 class="my-4"><i>Opa, bem vindo! Vamos ser produtivos?</i></h2>
 
-	<div id="tasks-container" class="d-flex flex-column align-items-center pt-4">
-		<button href="" type="button" id="create-task" class="btn btn-lg btn-outline-warning" title="" data-toggle="modal" data-target="#add-modal">
+	<div id="tasks-container" class="d-flex flex-column align-items-center pt-4 mb-4">
+		<button href="" type="button" id="create-task" class="btn btn-lg btn-outline-warning my-4" title="" data-toggle="modal" data-target="#add-modal">
 			<img src="icons/add.svg" class="button-add">
 			Adicionar tarefa
 		</button>

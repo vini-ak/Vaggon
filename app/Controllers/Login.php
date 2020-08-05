@@ -41,8 +41,11 @@ class Login extends BaseController
 				exit;
 				
 			} else {
-				base_url('/');				
 				$data['msg'] = "O email não está cadastrado na nossa base de dados";
+				$url = 'Location: ' . base_url('public/dashboard/');
+				header($url);
+				exit;				
+
 			}
 		}
 	}
@@ -111,6 +114,33 @@ class Login extends BaseController
 	}
 
 	public function alterarsenha() {
+		session_start();
+		if(!isset($_SESSION['id_user'])) {
+			$url = 'Location: ' . base_url('public/');
+			header($url);
+			exit;
+
+		} else {
+			echo view('alterar_senha');
+		}
+	}
+
+	public function validarsenha() {
+
+		session_start();
+
+		$loginModel = new \App\Models\LoginModel();
+
+		$user = $loginModel->find($_SESSION['id_user']);
+		$user->password = $this->request->getPost('senha1');
+
+		if ($loginModel->update($_SESSION['id_user'], $user)) {
+			$result = ['msg' => "Senha alterada com sucesso"];
+		} else {
+			$result = [];
+		}
+		echo json_encode($result);
+
 		
 	}
 

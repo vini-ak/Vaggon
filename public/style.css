@@ -25,7 +25,7 @@ p {
     color: #333;
     font-size: 1.25rem;
 }
-#form-login {
+#form-login, #form-config {
 	margin: 10vh auto;
 	border-radius: 10px;
 	box-shadow: 0px 1px 5px 3px #999;
@@ -38,12 +38,12 @@ p {
 	width: 100%;
 }
 
-#form-login > img {
+#form-login > img, #form-config > img {
 	max-width: 250px;
 	min-width: 200px;
 }
 
-#form-login label {
+#form-login label, #form-config label {
 	font-family: 'Mulish', sans-serif;
 	font-size: 1.125rem;
 }
@@ -73,7 +73,7 @@ p {
 	border: solid 3px;
 }
 .button-add {
-	width: 45px;
+	width: 35px;
 }
 
 thead th {

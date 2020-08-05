@@ -6,3 +6,174 @@ CRITICAL - 2020-08-05 11:03:43 --> session_destroy(): Trying to destroy uninitia
 #4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2020-08-05 15:18:20 --> syntax error, unexpected '}'
+#0 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-05 15:22:36 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:24:53 --> Argument 1 passed to CodeIgniter\Model::doProtectFields() must be of the type array, string given, called in /opt/lampp/htdocs/Vaggon/system/Model.php on line 870
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(870): CodeIgniter\Model->doProtectFields('vaggonteste')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, 'vaggonteste')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:25:54 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:25:58 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:26:55 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:29:17 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:30:02 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:30:48 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:33:12 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:36:09 --> syntax error, unexpected ')', expecting ';' or ','
+#0 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-05 15:37:06 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 15:37:58 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 16:05:48 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 16:07:32 --> Argument 1 passed to CodeIgniter\Model::doProtectFields() must be of the type array, string given, called in /opt/lampp/htdocs/Vaggon/system/Model.php on line 870
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(870): CodeIgniter\Model->doProtectFields('123456789')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, '123456789')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 16:09:22 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/Vaggon/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-05 16:10:15 --> Argument 1 passed to CodeIgniter\Model::doProtectFields() must be of the type array, string given, called in /opt/lampp/htdocs/Vaggon/system/Model.php on line 870
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(870): CodeIgniter\Model->doProtectFields('123456789')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, '123456789')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 16:11:19 --> Argument 1 passed to CodeIgniter\Model::doProtectFields() must be of the type array, string given, called in /opt/lampp/htdocs/Vaggon/system/Model.php on line 870
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(870): CodeIgniter\Model->doProtectFields('123456789')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, '123456789')
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 16:11:28 --> There is no data to update.
+#0 /opt/lampp/htdocs/Vaggon/system/Model.php(834): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(121): CodeIgniter\Model->update(Array, NULL)
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->validarsenha()
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 16:39:45 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-05 16:40:00 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-05 16:51:42 --> Undefined variable: _SESSION
+#0 /opt/lampp/htdocs/Vaggon/app/Controllers/Login.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 118, Array)
+#1 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(918): App\Controllers\Login->alterarsenha()
+#2 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 /opt/lampp/htdocs/Vaggon/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/Vaggon/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
