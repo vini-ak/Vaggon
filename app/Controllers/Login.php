@@ -5,12 +5,15 @@ class Login extends BaseController
 	public function index() 
 	{
 		session_start();
+
+		$data['msg'] = '';
+
 		if(isset($_SESSION['id_user'])) {
 			$url = 'Location: ' . base_url('public/dashboard/');
 			header($url);
 			exit;
 		} else {
-			return view('login_index');
+			return view('login_index', $data);
 		}
 	}
 
@@ -41,10 +44,8 @@ class Login extends BaseController
 				exit;
 				
 			} else {
-				$data['msg'] = "O email não está cadastrado na nossa base de dados";
-				$url = 'Location: ' . base_url('public/dashboard/');
-				header($url);
-				exit;				
+				$data['msg'] = "Email/senha inválidos.";
+				echo view("login_index", $data);			
 
 			}
 		}
@@ -151,6 +152,7 @@ class Login extends BaseController
 		$builder->delete(['id_user' => $_SESSION['id_user']]); 
 
 		$loginModel = new \App\Models\LoginModel();
+
 
 		if ($loginModel->delete($_SESSION['id_user'])) {
 			session_destroy();

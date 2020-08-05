@@ -11,6 +11,7 @@
 	<form id="form-login" action="validar" method="post" accept-charset="utf-8" class="d-flex flex-column align-items-center py-2 px-4">
 		<img src="vaggon-logo.png">
 		<p>Organize suas tarefas e aumente a produtividade.</p>
+		<h5 class="mt-3"><?php echo $msg ?></h5>
 
 		<div class="d-flex flex-column mb-2">
 			<label for="#email">Email</label>

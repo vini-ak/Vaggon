@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h2 class="mt-5"><?php echo $titulo; ?></h2>
-	<p class="text-center mt-5"><strong><?php echo $msg; ?></strong></p>
+	<h5 class="text-center mt-3"><?php echo $msg; ?></h5>
 
 	<div id="form-config" class="d-flex flex-column pt-1 px-5">
 		<img src="vaggon-logo.png" class="align-self-center"> 
